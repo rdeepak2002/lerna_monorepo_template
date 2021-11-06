@@ -1,0 +1,36 @@
+{
+  "name": "project_m",
+  "version": "0.0.0",
+  "repository": "https://github.com/rdeepak2002/project_m.git",
+  "author": "Deepak Ramalingam <rdeepak2002@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "devDependencies": {
+    "lerna": "^4.0.0",
+    "microbundle": "^0.14.1"
+  },
+  "scripts": {
+    "prestart": "lerna run build --scope @project_m/common",
+    "start": "lerna run start --parallel",
+    "test": "lerna run test --since",
+    "new-version": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.12",
+    "nodemon": "^2.0.14",
+    "parse-duration": "^1.0.2",
+    "randomstring": "^1.2.1",
+    "redis": "^3.1.2",
+    "yargs": "^17.2.1"
+  }
+}

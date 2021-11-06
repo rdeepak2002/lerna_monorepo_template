@@ -1,0 +1,13 @@
+{
+  "name": "@project_m/auth-server",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./src/server.js"
+  },
+  "dependencies": {
+    "@project_m/common": "^1.0.0"
+  }
+}
